@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import { QuizContext } from './context/quiz'
 import Question from './components/Question'
 import './App.css'
@@ -7,6 +7,12 @@ import Welcome from './components/Welcome'
 function App() {
 
   const [quizState, dispatch] = useContext(QuizContext)
+
+  useEffect(()=>{
+
+    dispatch({type: "REORDER QUESTIONS"})
+
+  },[])
 
   return (
     <div className='App'>
