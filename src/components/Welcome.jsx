@@ -5,7 +5,7 @@ import './welcome.css'
 
 const Welcome = () => {
 
-  const [QuizState, dispatch] = useContext(QuizContext)
+  const [quizState, dispatch] = useContext(QuizContext)
     
    
     return (
